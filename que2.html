@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            background-color: aquamarine;
+        }
+        ul {
+            display: flex;
+        }
+        li {
+            list-style-type: none;
+            padding: 20px;
+            position: relative; /* Add position relative for positioning the dropdown */
+        }
+        li:hover ul {
+            display: block; 
+        }
+        ul ul {
+            display: none; 
+            position: absolute; 
+            top: 100%;
+            
+            background-color: rgb(64, 156, 125);
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">about</a></li>
+                <li>
+                    <a href="">product</a>
+                    <ul>
+                        <li><a href="">Product 1</a></li>
+                        <li><a href="">Product 2</a></li>
+                        <li><a href="">Product 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="">services</a>
+                    <ul>
+                        <li><a href="">Service 1</a></li>
+                        <li><a href="">Service 2</a></li>
+                        <li><a href="">Service 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
